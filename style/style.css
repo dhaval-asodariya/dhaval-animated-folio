@@ -9,9 +9,11 @@ body{
     transition-duration: 0.6s;
     /* overflow: hidden; */
     overflow-x: hidden;
+    
 }
 html{
     scroll-behavior: smooth;
+     overflow-x: hidden;
 }
 hr{
     border: dashed #8596c6e8 1.5px;
@@ -112,6 +114,7 @@ hr{
     /* height: calc(100vh - 10px); */
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     
 }
@@ -163,7 +166,7 @@ hr{
 
 .intro1{
     width: 40%;
-
+    /* overflow: hidden; */
 }
 
 
@@ -537,7 +540,7 @@ top: 50px;
  .skill1-discription{
     width: 100%;
     padding-left: 10px;
-    color: #021e3f;
+    color: #fbf9f9cf;
     font-family: 'Roboto', sans-serif;
     
     font-size: 18px;
