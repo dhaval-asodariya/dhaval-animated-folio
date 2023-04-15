@@ -35,7 +35,7 @@ hr{
     display:flex;
     font-size: 40px;
     font-weight: 800;
-    color: #FAD6A5;
+    color: #fbebd8;
     font-family: 'Aladin', cursive;
     letter-spacing: 2px;
     cursor: pointer;
@@ -43,10 +43,11 @@ hr{
 }
 .logo:hover{
     cursor: pointer;
-    color: #fbebd8;
+   
 }
 .folio{
-    color: #e0ba86d9;
+    /* color: #FAD6A5; */
+     color: #9de2db;
     margin-left: 10px;
 }
 .dot{
@@ -66,10 +67,11 @@ hr{
  .navitems > li {
     list-style: none;
    padding: 5px 25px;
-
+    font-size: 20px;
 }
 .navitems > li > a{
-    color: #FAD6A5;
+   
+      color: #fbebd8;
     text-decoration: none;
 }
 .navitems > li > a:hover{
@@ -79,7 +81,7 @@ hr{
 .navitems > li > a::after{
     content: "";
     width: 0px;
-    height: 1px;
+    height: 2px;
     display: block;
     background-color:#fc9f9f; 
     transition: 300ms;
@@ -217,7 +219,8 @@ hr{
     width: 90%;
     font-size: 1.1em;
     margin-top: 10px;
-    color: #8b9ccb;
+    /* color: #8b9ccb; */
+    color: aliceblue;
     /* color: #94aae6; */
 }
 .btns{
@@ -398,7 +401,7 @@ hr{
     display: flex;
     width: 80%;
     margin: 0px auto auto 10px;
-    
+    gap: 1px;
    
     /* border: 1px solid white; */
 }
@@ -423,10 +426,10 @@ hr{
 .about-discription{
     align-items: center;
     font-size: 17px;
-    /* color: #e9e9d7ee; */
-    color: #d4d4b4ee;
+  
+    color: aliceblue;
     padding: 10px;
-    /* font-family: 'Lato', sans-serif; */
+   
     width: 92%;
    
     /* margin-left:20px ; */
@@ -485,20 +488,24 @@ top: 50px;
     justify-content: space-between;
 }
 .skill-box{
-    width: 30%;
+    width: 29%;
     /* border: 1px solid white; */
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
+
     min-height: 200px;
     background-color: #224360;
+
+    transition: transform 0.4s ease;
 }
 .skill-box:hover .skill1-h3{
     color: #d38d8d;
 }
-.skill-box:hover{
+.skill-box:hover ,.other-skills-list:hover ,.ongoing-skills-list:hover{
     cursor: pointer;
-    position: relative;
-    top: -4px;
+    /* position: relative; */
+    /* top: -4px; */
+    transform: scale(1.05);
 }
 
 .skills-icon{
@@ -539,11 +546,12 @@ top: 50px;
  
  .skill1-discription{
     width: 100%;
-    padding-left: 10px;
+    padding: 10px;
+  
     color: #fbf9f9cf;
     font-family: 'Roboto', sans-serif;
     
-    font-size: 18px;
+    font-size: 16px;
 
  }
  .other-skills{
@@ -557,15 +565,13 @@ top: 50px;
     background-color: #1b3e5bc0;
     border-radius: 8px;
     margin-right: 20px;
+    padding: 10px;
+     transition: transform 0.4s ease;
  }
  .other-skills-list:hover .osl1-h3{
     color: #d38d8d;
 }
-.other-skills-list:hover{
-    cursor: pointer;
-    position: relative;
-    top: -4px;
-}
+
 
  .other-skills-list  > h3{
     font-family: 'Lato', sans-serif;
@@ -579,18 +585,16 @@ top: 50px;
  }
  .ongoing-skills-list{
     width: 50%;
+    padding: 10px;
     align-items: center;
     background-color: #1b3e5bc0;
     border-radius: 8px;
+     transition: transform 0.4s ease;
  }
  .ongoing-skills-list:hover .osl2-h3{
     color: #d38d8d;
 }
-.ongoing-skills-list:hover{
-    cursor: pointer;
-    position: relative;
-    top: -4px;
-}
+
  .ongoing-skills-list > h3{
     font-family: 'Lato', sans-serif;
     margin-left: 10px;
@@ -936,31 +940,33 @@ top: 50px;
     font-size: 30px;
     /* color: #ffffe8e9; */
     color: #76BA99;
+
+    transition: transform 0.3s ease;
 }
 .linked-in > a > i:hover{
     color: #0380d9;
     cursor: pointer;
-    position: relative;
-    top: -4px;
+    
+    transform: scale(1.06);
   }
   .insta >a > i:hover{
     color: rgba(224, 67, 150, 0.932);
     cursor: pointer;
-    position: relative;
-    top: -4px;
+    
+    transform: scale(1.06);
   }
 
   .twitter >a > i:hover{
     color: #0096FF;
     cursor: pointer;
-    position: relative;
-    top: -4px;
+    
+    transform: scale(1.06);
   }
   .github > a > i:hover{
     color: rgb(175, 168, 168);
     cursor: pointer;
-    position: relative;
-    top: -4px;
+    
+    transform: scale(1.06);
   }
 
   .contact-right{
@@ -1009,7 +1015,7 @@ form input, form textarea{
     cursor: pointer;
 }
 .contact-right >form >button:hover {
-    color: #F48484;
+    background-color: #F48484;
 }
 #msg{
     
